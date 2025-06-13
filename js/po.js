@@ -11,6 +11,8 @@ $( ()=> {
         const aboutTop = $("#about").offset().top ; //#about의 y좌표
 
         const port1Top = $("#portfolio").offset().top ;
+        const port2Top = $("#port2").offset().top -400 ;
+
 
         const eventTop =   $("#event").offset().top ; 
         const contactTop = $("#contact").offset().top ;         
@@ -30,6 +32,9 @@ $( ()=> {
 
         if(  $(window).scrollTop() >= port1Top - 200 ) {            
             $("#port1").addClass('act');
+        }
+        if(  $(window).scrollTop() >= port2Top - 200 ) {            
+            $("#port2").addClass('act');
         }
         if(  $(window).scrollTop() >= port1Top) {
             $("#menu a").eq(2).addClass('act').siblings().removeClass('act');  //상단메뉴 'Portfolio'활성화

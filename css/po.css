@@ -183,6 +183,9 @@ h2 {
 #port1 {
     min-height:70vh; padding-top:0;
 }
+#port2 {
+    min-height:70vh; padding-top:0;
+}
 #portfolio .left {
     flex:1.1; border: 0px solid red;
     ;
@@ -367,6 +370,9 @@ h2 {
    
     #portfolio li {
         flex-direction: column;
+    }
+    #port2 .right {
+        margin-right: 0 !important;
     }
     #portfolio .left b {
         padding-bottom: 10pt;
